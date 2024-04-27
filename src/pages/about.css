@@ -1,0 +1,14 @@
+.about{
+    background-color: black;
+    height: 83vh;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+p{
+    font-size: 20px;
+}

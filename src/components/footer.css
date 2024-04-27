@@ -1,0 +1,38 @@
+.content{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+img{
+    height: 40px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 68px;
+    border-top: 3px solid white;
+    margin-top: auto; 
+    gap: 30px;
+}
+
+
+button{
+    background-color: transparent;
+    border: none;
+    padding: 3px;
+}
+
+button:hover{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.facebook{
+    height: 37px;
+}
+.esconde{
+    display: none;
+}
