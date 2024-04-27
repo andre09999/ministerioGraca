@@ -4,29 +4,27 @@ import Pc from '../Images/pc.mp4'
 import celular from '../Images/celular.mp4'
 
 function Home() {
-  const [video, setVideo] = useState('homepc')
-  const [video1 , setVideo1] = useState('esconde')
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     function handleResize() {
-      if (window.innerWidth < 600) {
-        setVideo('esconde')
-        setVideo1('homecell')
-      } else {
-        setVideo1('esconde')
-        setVideo('homepc')
-      }
+      setIsMobile(window.innerWidth < 600);
     }
 
     window.addEventListener('resize', handleResize);
+    // Chamamos handleResize() uma vez para definir o estado inicial
+    handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
-  }, []); 
+  }, []);
 
   return (
     <div className="home">
-      <video className={video} src={Pc} autoPlay loop muted />
-      <video className={video1} src={celular} autoPlay loop muted/>
+      {isMobile ? (
+        <video className="homecell" src={celular} autoPlay loop muted />
+      ) : (
+        <video className="homepc" src={Pc} autoPlay loop muted />
+      )}
     </div>
   );
 }
