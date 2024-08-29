@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Instagram from '../Images/instagram.png'
 import Facebook from '../Images/facebook.png'
 import Youtube from '../Images/youtube.png'
@@ -6,8 +7,10 @@ import whatsapp from '../Images/whatsapp.png'
 import maps from '../Images/maps.png'
 import './footer.css'
 function Footer() {
+  const location = useLocation();
   const [video, setVideo] = useState('footerpc')
-  const [video1 , setVideo1] = useState('esconde')
+  const [video1, setVideo1] = useState('esconde')
+  const [fot , setFot] = useState('content')
   const routeChange = (e) =>{ 
     if(e === 'Youtube'){
       window.open('https://www.youtube.com/@ministeriogracago','_blank')
@@ -37,10 +40,24 @@ function Footer() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [window.innerWidth]);
   
-
+  useEffect(() => {
+    console.log(location.pathname === '/')
+    if (location.pathname === '/') {
+      setFot('content')
+    }
+    if (location.pathname === '/sobre') {
+      setFot('content')
+    }
+    if (location.pathname === '/servir') {
+      setFot('content')
+    }
+    if (location.pathname === '/kids') {
+      setFot('esconde')
+    }
+  }, [location.pathname]);
 
   return (
-    <div className="content">
+    <div className={`${fot}`}>
     <footer className={video}>
         <button onClick={() => routeChange('Youtube')}> <img src={Youtube} alt="Youtube"/> </button>
         <button onClick={() => routeChange('Instagram')}> <img src={Instagram} alt="instagram"/> </button>
