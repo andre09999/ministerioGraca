@@ -1,0 +1,31 @@
+.fotokids{
+  width: 350px;
+  height: 350px;
+}
+ 
+.pagKids{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  width: 1370px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.color{
+  color: black;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.custom-hr {
+  border: none;
+  height: 2px;
+  background-color: black;
+  width: 100%;
+  margin: 20px 0;
+}

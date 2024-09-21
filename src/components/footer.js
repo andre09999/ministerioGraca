@@ -61,7 +61,10 @@ function Footer() {
     <footer className={video}>
         <button onClick={() => routeChange('Youtube')}> <img src={Youtube} alt="Youtube"/> </button>
         <button onClick={() => routeChange('Instagram')}> <img src={Instagram} alt="instagram"/> </button>
-        <button onClick={() => routeChange('Facebook')}> <img className="facebook" src={Facebook} alt="Facebook"/> </button>
+        <button onClick={() => routeChange('Facebook')}> <img className="facebook" src={Facebook}
+          alt="Facebook" /> </button>
+        <button onClick={() => routeChange('maps')}> <img src={maps} alt="maps" /> </button>
+        <button onClick={() => routeChange('whatsapp')}> <img src={whatsapp} alt="whatsapp" /> </button>
       </footer>
       <footer className={video1}>
         <button onClick={() => routeChange('Youtube')}> <img src={Youtube} alt="Youtube" /> </button>

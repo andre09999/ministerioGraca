@@ -8,6 +8,11 @@
       "type": "image/x-icon"
     },
     {
+      "src": "favicoKids.ico",
+      "sizes": "256x256",
+      "type": "image/x-icon"
+    },
+    {
       "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"

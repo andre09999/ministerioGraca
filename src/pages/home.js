@@ -4,6 +4,7 @@ import Pc from '../Images/pc.mp4'
 import celular from '../Images/celular.mp4'
 
 function Home() {
+
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {

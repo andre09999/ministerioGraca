@@ -40,6 +40,12 @@ header {
     width: 150px;
     border-radius: 10px;
 }
+#escondido {
+    display: none;
+}
+.escondido {
+    display: none !important;
+}
 .headerKids{
     background-color: #17074D !important;
   }
