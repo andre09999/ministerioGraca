@@ -7,10 +7,10 @@ function About() {
     <main className="about">
       <div className="overlay">
       
-        <h1 className="colorabout">Descubra mais sobre o Ministério Graça</h1>
+        <h1 className="colorabout">Descubra mais sobre o Ministério Graça:</h1>
 
         <p className="colorabout">
-          O Ministério Graça surgiu a partir de uma chamada divina, nos
+          A Graça surgiu a partir de uma chamada divina, nos
           convidando a adotar um modelo de voluntariado.
         </p>
         <p className="colorabout">
@@ -22,7 +22,7 @@ function About() {
           Ministério Graça tem se fortalecido no evangelismo profético, que
           abrange: salvação, libertação, cura, voluntariado e restauração do ser
           humano. Com esse mesmo propósito, também realizamos obras sociais,
-          como o projeto "Graça nas Ruas".
+          como o projeto "Graça nas Ruas" e a casa de apoio Dona Iraides localizado no parque amazonia em goiânia.
         </p>
       </div>
       <img alt="voluntarios" className="vol" src={voluntarios} />
