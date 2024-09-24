@@ -1,5 +1,5 @@
 import React from "react";
-import jesus from "../Images/kids.jpg";
+import jesus from "../Images/GraçaKids.png";
 import "./GracaKids.css";
 import { Link } from "react-router-dom";
 
