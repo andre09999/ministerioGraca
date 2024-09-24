@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+
+.colorabout {
+  display: flex;
+  font-size: 2rem;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.letter {
+  transition: color 0.3s ease;
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 1px 1px 2px black; 
+}
+
+.letter-0 { color: red; }
+.letter-1 { color: orange; }
+.letter-2 { color: rgb(3, 211, 211); }
+.letter-3 { color: green; }
+.letter-4 { color: blue; }
+.letter-5 { color: purple; }
+.letter-6 { color: rgb(231, 145, 159); }
+.letter-7 { color: brown; }
+.letter-8 { color: teal; }
+.letter-9 { color: violet; }
+.letter-10 { color: red; }
+.letter-11 { color: orange; }
+.letter-12 { color: rgb(0, 255, 255); }
+.letter-13 { color: green; }
+.letter-14 { color: blue; }
+.letter-15 { color: purple; }
+.letter-16 { color: pink; }
+.letter-17 { color: brown; }
+.letter-18 { color: teal; }
+.letter-19 { color: violet; }
+.letter-20 { color: red; }
+.letter-21 { color: orange; }
+.letter-22 { color: rgb(0, 255, 255); }
+.letter-23 { color: green; }
+.letter-24 { color: blue; }
+.letter-25 { color: purple; }
+.letter-26 { color: pink; }
+.letter-27 { color: brown; }
+.letter-28 { color: teal; }
+.letter-29 { color: violet; }
+.letter-30 { color: red; }
+.letter-31 { color: orange; }
+.letter-32 { color: rgb(0, 255, 255); }
+.letter-33 { color: green; }
+.letter-34 { color: blue; }
+.letter-35 { color: purple; }
+.letter-36 { color: pink; }
+.letter-37 { color: brown; }
+.letter-38 { color: teal; }
+.letter-39 { color: violet; }

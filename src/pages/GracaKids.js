@@ -2,13 +2,15 @@ import React from "react";
 import jesus from "../Images/kids1.webp";
 import "./GracaKids.css";
 import { Link } from "react-router-dom";
+import ColorfulHeading from '../components/textcolor';
+
 
 function GracaKids() {
   return (
     <div className="pagKids">
       <img className="fotokids" src={jesus} alt=" jesus com as crianças" />
-
-      <h1 className="color">Graça Kids</h1>
+      <h1 className="color" id="titulo">Descubra mais sobre o </h1>
+      <ColorfulHeading text="Graça Kids" />
       <p className="color">
         O Ministério Graça apresenta o Graça Kids, um espaço dedicado à
         evangelização, discipulado e pastoreio das crianças de 1 a 12 anos da

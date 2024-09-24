@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+
 .about{
     background-color: black;
     color: white;
@@ -8,6 +10,11 @@
 }
 .colorabout{
     color: rgb(252, 252, 252);
+    font-family: "Glass Antiqua", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px !important;
+  display: inline;
 }
 .overlay {
     backdrop-filter: blur(2px);

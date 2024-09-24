@@ -6,6 +6,9 @@ function About() {
   return (
     <main className="about">
       <div className="overlay">
+        {
+          
+        }
         <h1 className="colorabout">Descubra mais sobre o Ministério Graça</h1>
 
         <p className="colorabout">
