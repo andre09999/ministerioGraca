@@ -69,7 +69,7 @@ header {
         display: none !important;
     }
     .butt {
-        position: fixed;
+        position: absolute;
         top: 40px;
         right: 0;
         background-color: transparent;
@@ -79,7 +79,6 @@ header {
     .logo {
         width: 100px;
         height: 100px;
-        position: fixed;
         top: 2px;
         background-color: transparent;
         border: none;

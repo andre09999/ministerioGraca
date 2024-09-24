@@ -1,12 +1,11 @@
 html, body {
-    height: 100vh;
     margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-
-
 .content {
-    flex: 1; /* Faz com que o conteúdo ocupe o espaço restante */
+    flex: 1; 
 }
 
 footer {
@@ -14,8 +13,18 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: black;
-    border-top: 3px solid white;
+    border-top: 10px solid rgb(0, 0, 0);
     gap: 30px;
+    color: white;
+    padding-top: 45px;
+    padding-bottom: 37px;
+    position: relative;
+    z-index: -1;
+}
+.container1{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 button {
@@ -41,3 +50,45 @@ button:hover {
 img {
     height: 40px;
 }
+
+
+@media screen and (max-width: 600px) {
+
+    .content {
+        flex: 1; 
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border-top: 3px solid rgb(0, 0, 0);
+        gap: 30px;
+    }
+    
+    button {
+        background-color: transparent;
+        border: none;
+        padding: 3px;
+    }
+    
+    button:hover {
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 3px;
+    }
+    
+    .facebook {
+        height: 37px;
+    }
+    
+    .esconde {
+        display: none;
+    }
+    
+    img {
+        height: 40px;
+    }
+}
+

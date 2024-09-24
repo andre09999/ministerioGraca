@@ -1,6 +1,8 @@
 .fotokids{
-  width: 350px;
+  margin-top: 15px;
   height: 350px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 5px rgb(147, 195, 197);
 }
  
 .pagKids{
