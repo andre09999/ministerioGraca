@@ -58,8 +58,7 @@ function Headercellphone() {
       setCont('headerKids');
       setCont1('headerKids');
     }
-    
-    // Fecha o menu quando a rota muda
+  
     closeMenu();
   }, [location.pathname]);
 
@@ -69,6 +68,7 @@ function Headercellphone() {
         <Link to='/sobre' id={nav} className={`nav ${sobre}`} onClick={closeMenu}>Sobre</Link>
         <Link to='/' id={nav} className={`nav inicial ${inicio}`} onClick={closeMenu}>Pagina inicial</Link>
         <Link to='/servir' className={`nav but ${contribuir}`} id={nav} onClick={closeMenu}>Contribuir</Link>
+        <Link to='https://gestaoweb.eklesiaonline.com.br/cadastro/7mmmU'  target='_blank' className={'nav bu'} id={nav} onClick={closeMenu}>Cadastre-se</Link>
         <Link to='/kids' className={`nav child ${kids}`} id={nav} onClick={closeMenu}>Graça Kids</Link>
       </div>
       <img src={log} className="logo" alt="logo" />

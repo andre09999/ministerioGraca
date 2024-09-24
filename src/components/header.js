@@ -49,7 +49,7 @@ function Header() {
         <Link to='/' className={`nav inicial ${inicio}`}>Pagina inicial</Link>
         <Link to='/servir' className={`nav but ${contribuir}`} >Contribuir</Link>
         <Link to='/kids' className={`nav child ${kids}`} >Graça Kids</Link>
-      <Link to='https://gestaoweb.eklesiaonline.com.br/cadastro/7mmmU0'  target='_blank' className={`nav `}>Cadastre-se</Link>
+        <Link to='https://gestaoweb.eklesiaonline.com.br/cadastro/7mmmU0'  target='_blank' className={`nav `}>Cadastre-se</Link>
     </header>
   );
 }
