@@ -1,54 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 .about{
     background-color: black;
     color: white;
-    text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around !important;
     flex-direction: row-reverse;
-   
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
 }
-.colorabout{
-    color: rgb(252, 252, 252);
+
+.titulos{
     font-family: "Glass Antiqua", cursive;
-  font-weight: 400;
+    font-weight: 400;
+    font-style: normal;
+}
+.textoabout{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
-  font-size: 18px !important;
+  font-size: 23px !important;
+}
+.colorabout1{
+  color: rgb(252, 252, 252);
   display: inline;
 }
 .overlay {
-    backdrop-filter: blur(2px);
     border-radius: 10px; 
     text-align: center;
     display: flex;
     flex-direction: column;
     max-height: 100%;
-    width: 1000px;
+    width: 500px !important;
     margin: 0 auto;
-    max-width: 90%;
+    width: 90%;
     gap: 50px;
     justify-content: space-around;
     align-items: center;
-}
-p{
-    font-size: 20px;
+    font-size: 48px !important;
 }
 
+
 .vol{
-    height: 768px;
-    
+    height: 700px;
+    box-shadow: 0px 0px 10px 1px orange;
+    margin-left: 220px;
 }
 
 @media screen and (max-width: 600px) {
 
     .about{
         flex-direction: column-reverse;
-       
+        height: 100%;
     } 
+    .overlay{
+        width: 80% !important;
+        max-height: 100vh;
+        font-size: 16px !important;
+        padding-top: 50px;
+    }
+    .textoabout{
+        font-size: 18px !important
+    }
     .vol{
-        max-width: 768px;
-        max-height: 350px;
+        width: 300px;
+        height: 300px;
         border-radius: 15px;
+        position: relative;
+        top: 30px;
+        margin-left: 0;
+    }
+    .h11{
+        display: none;
     }
 }
