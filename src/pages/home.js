@@ -6,21 +6,23 @@ import celular from '../Images/celular.mp4'
 function Home() {
 
   const [isMobile, setIsMobile] = useState(false);
-
+  const [celulares, setCelulares] = useState("homecell1");
+  const [pc, setPc] = useState('homepc1');
   useEffect(() => {
     function handleResize() {
       setIsMobile(window.innerWidth < 600);
     }
-
+    setPc('homepc1')
+    setCelulares('homecell1')
     window.addEventListener('resize', handleResize);
-    // Chamamos handleResize() uma vez para definir o estado inicial
+   
     handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
-    <div className="home">
+    <div className={isMobile ? celulares : pc}>
       {isMobile ? (
         <video className="homecell" src={celular} autoPlay loop muted />
       ) : (

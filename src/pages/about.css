@@ -35,7 +35,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    max-height: 100%;
+    max-height: auto;
     width: 500px !important;
     margin: 0 auto;
     width: 90%;
@@ -60,19 +60,20 @@
     } 
     .overlay{
         width: 80% !important;
-        max-height: 100vh;
+        height: auto;
         font-size: 16px !important;
-        padding-top: 50px;
+        margin-top: 50px;
+       
     }
     .textoabout{
         font-size: 18px !important
     }
     .vol{
-        width: 300px;
-        height: 300px;
+        margin-top: 20px;
+       max-width: 300px;
+        max-height: 300px;
         border-radius: 15px;
-        position: relative;
-        top: 30px;
+
         margin-left: 0;
     }
     .h11{

@@ -38,7 +38,7 @@ function App() {
     }
   }, [location.pathname]);
   return (
-    <div>
+    <div id="raiz">
 
       {isMobile ? (<Header />) : ( <Headercellphone />) }
       
