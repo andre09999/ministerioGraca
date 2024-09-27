@@ -70,7 +70,7 @@ header {
     }
     .butt {
         position: absolute;
-        top: 40px;
+        top: 20px;
         right: 10%;
         background-color: transparent;
         border: none;
@@ -94,13 +94,13 @@ header {
         display: flex;
         flex-direction: row;
         position: absolute;
-        top: 5px;
+        top: -10px;
         width: 100%;
         z-index: 9999;
         border-radius: 0px 0px 10px 10px;
         box-sizing: border-box;
         animation: slideDown 4s forwards;
-        transform: translateY(-100px);
+        transform: translateY(-80px);
         padding: 10px;
         background-color: black;
         flex-wrap: wrap;
