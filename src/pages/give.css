@@ -1,36 +1,64 @@
-.give{
+.give {
     background-image: url('../Images/Generosidade.jpg');
     background-position: center;
-    background-size: contain;
+    background-size: contain !important;
     background-repeat: no-repeat;
     height: 77vh;
     background-color: black;
+    display: flex; /* Ajuda a centralizar conteúdo flexível se necessário */
+    justify-content: center; /* Ajusta centralização horizontal */
+    align-items: center; /* Ajusta centralização vertical */
+    position: relative; /* Necessário para o botão posicionado */
 }
-.buttongiv{
+
+.buttongiv {
     position: absolute;
-    bottom: 100px;
-    left: 22vw;
+    bottom: 5%; /* Adapta a posição do botão para todas as telas */
+    left: 5vw;
     height: 70px;
     width: 350px;
     border: 1px solid white;
     border-radius: 10px;
+    background-color: transparent; /* Garante o fundo transparente por padrão */
+    color: white; /* Texto branco para melhor contraste */
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Suave transição ao hover */
 }
 
-.buttongiv:hover{
+.buttongiv:hover {
     background-color: aliceblue;
     color: black;
 }
+
 @media screen and (max-width: 600px) {
-    .buttongiv{
-        position: absolute;
-        bottom: 130px;
-        height: 70px;
-        left: 0;
-        width: 100%;
-        border: 1px solid white;
-        border-radius: 10px;
-    }
-    .give{
+    .give {
         height: 82vh;
+        background-size: cover; /* Mantém o fundo cobrindo o contêiner */
+    }
+
+    .buttongiv {
+        bottom: 10%; /* Ajusta a posição do botão para não sair da tela */
+        left: 0;
+        width: 90%; /* Torna o botão mais adaptável a telas pequenas */
+        margin: 0 auto; /* Centraliza horizontalmente */
+        height: 60px;
+        font-size: 16px; /* Tamanho da fonte adaptado */
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .give {
+        height: 84.9vh !important;
+        background-size: contain !important;
+    }
+    
+    .buttongiv {
+        height: 80px; /* Aumenta o tamanho do botão em telas maiores */
+        width: 400px; /* Aumenta a largura do botão em telas grandes */
+        font-size: 20px; /* Ajusta o tamanho da fonte */
     }
 }

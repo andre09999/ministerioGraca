@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Sofadi+One&display=swap');
 
 .fotokids{
-  margin-top: 15px;
-  height: 350px;
+  margin-top: 50px;
+  height: 40vh;
   border-radius: 10px;
   box-shadow: 1px 1px 10px 5px rgb(147, 195, 197);
 }
@@ -14,10 +14,11 @@
   align-items: center;
   gap: 35px;
   width: 100%;
-  height: 90vh;
+  height: auto;
   margin: 0 auto;
-  max-width: 100%;
-  background-color: rgba(187, 187, 22, 0.329);
+  max-width: auto;
+
+  background-color: rgba(187, 187, 22, 0.452);
 }
 #titulo{
   font-family: "Gowun Batang", serif;

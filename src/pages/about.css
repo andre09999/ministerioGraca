@@ -1,81 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-.about{
+.about {
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-around !important;
     flex-direction: row-reverse;
     align-items: center;
-    height: 80vh;
+    min-height: 77vh;
+    height: auto;
     width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    
 }
 
-.titulos{
+.titulos {
     font-family: "Glass Antiqua", cursive;
     font-weight: 400;
     font-style: normal;
 }
-.textoabout{
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 23px !important;
+
+.textoabout {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px !important;
 }
-.colorabout1{
-  color: rgb(252, 252, 252);
-  display: inline;
+
+.colorabout1 {
+    color: rgb(252, 252, 252);
+    display: inline;
+
 }
+
 .overlay {
     border-radius: 10px; 
     text-align: center;
     display: flex;
     flex-direction: column;
-    max-height: auto;
-    width: 500px !important;
-    margin: 0 auto;
     width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
     gap: 50px;
     justify-content: space-around;
     align-items: center;
     font-size: 48px !important;
 }
 
-
-.vol{
-    height: 700px;
+.vol {
+    display: block;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 11;
     box-shadow: 0px 0px 10px 1px orange;
     margin-left: 220px;
 }
 
 @media screen and (max-width: 600px) {
-
-    .about{
+    .about {
         flex-direction: column-reverse;
-        height: 100%;
+        align-items: center;
+        justify-content: center;
+        height: auto;
         padding-top: 45px;
+        width: 100%;
     } 
-    .overlay{
+    
+    .overlay {
         width: 80% !important;
         height: auto;
         font-size: 16px !important;
         margin-top: 5px;
-       
+        margin-left: 0;
     }
-    .textoabout{
-        font-size: 18px !important
+
+    .textoabout {
+        font-size: 18px !important;
+        width: 85%;
     }
-    .vol{
+
+    .vol {
         max-width: 300px;
         max-height: 250px;
         border-radius: 15px;
-        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .h11{
+
+    .h11 {
         display: none;
     }
+}
+
+
+@media screen and (min-width: 1600px) {
+    .about {
+        height: 84.9vh !important;
+        
+    } 
+    
+   
 }

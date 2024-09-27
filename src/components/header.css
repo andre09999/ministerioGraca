@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 90px;
     background-color: black;
     border-bottom: 1px solid white;
 }
@@ -71,7 +71,7 @@ header {
     .butt {
         position: absolute;
         top: 40px;
-        right: 0;
+        right: 10%;
         background-color: transparent;
         border: none;
         box-sizing: border-box;
@@ -95,7 +95,7 @@ header {
         flex-direction: row;
         position: absolute;
         top: 5px;
-        width: 100%;
+        width: 90%;
         z-index: 9999;
         border-radius: 0px 0px 10px 10px;
         box-sizing: border-box;

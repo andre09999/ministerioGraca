@@ -10,12 +10,15 @@ import GracaKids from './pages/GracaKids';
 
 
 function App() {
+  const location = useLocation();
 
   const [isMobile, setIsMobile] = useState(false);
   
   const checkMobile = () => {   
     setIsMobile(window.innerWidth >= 600);
   };
+  const isKidsPage = location.pathname === '/kids' ? true : false;
+ 
   useEffect(() => {
 
     checkMobile();
@@ -26,7 +29,7 @@ function App() {
       window.removeEventListener("resize", checkMobile);
     };
   }, [isMobile]);
-  const location = useLocation();
+ 
 
   useEffect(() => {
     
@@ -38,7 +41,7 @@ function App() {
     }
   }, [location.pathname]);
   return (
-    <div id="raiz">
+    <div className={isKidsPage ? 'transparent-background' : "raiz"}>
 
       {isMobile ? (<Header />) : ( <Headercellphone />) }
       
