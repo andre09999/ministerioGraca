@@ -38,23 +38,22 @@
 }
 
 @media screen and (max-width: 600px) {
-    #root #raiz{
+    #root{
         display: flex;
         flex-direction: column;
-        height: 100% !important
+        height: 70% !important
     }
     .homecell{
         background-color: black;
         height: 100% !important;
-        width: 100%;
-        display: block;
+        width: 100vw;
         margin: auto;
   
     }
     
     .homecell1{
         background-color: black;
-        height: 70% !important;
+        height: 84% !important;
         width: 100% !important;
         
     }
