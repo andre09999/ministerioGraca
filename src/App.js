@@ -1,60 +1,47 @@
-import React, { useState, useEffect } from "react";
-import { Routes, Route, useLocation } from 'react-router-dom';
-import Home from './pages/home'
-import About from './pages/about'
-import Give from './pages/give'
-import Header from './components/header';
-import Headercellphone from './components/headercellphone'
-import Footer from './components/footer';
-import GracaKids from './pages/GracaKids';
+import { useEffect, useState } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
 
+import Footer from "./components/footer";
+import Header from "./components/header";
+import HeaderCellphone from "./components/headercellphone";
+import About from "./pages/about";
+import Give from "./pages/give";
+import GracaKids from "./pages/GracaKids";
+import Home from "./pages/home";
+
+const DESKTOP_BREAKPOINT = 600;
 
 function App() {
   const location = useLocation();
+  const [isDesktop, setIsDesktop] = useState(
+    () => window.innerWidth >= DESKTOP_BREAKPOINT
+  );
 
-  const [isMobile, setIsMobile] = useState(false);
-  
-  const checkMobile = () => {   
-    setIsMobile(window.innerWidth >= 600);
-  };
-  const isKidsPage = location.pathname === '/kids' ? true : false;
- 
   useEffect(() => {
-
-    checkMobile();
-
-    window.addEventListener("resize", checkMobile);
-
-    return () => {
-      window.removeEventListener("resize", checkMobile);
+    const updateLayout = () => {
+      setIsDesktop(window.innerWidth >= DESKTOP_BREAKPOINT);
     };
-  }, [isMobile]);
- 
 
-  useEffect(() => {
-    
-    if (location.pathname === '/kids') {
-      const favicon = document.getElementById('');
-      console.log(favicon)
-    } else {
-     
-    }
-  }, [location.pathname]);
+    window.addEventListener("resize", updateLayout);
+    return () => window.removeEventListener("resize", updateLayout);
+  }, []);
+
+  const isKidsPage = location.pathname === "/kids";
+
   return (
-    <div className={isKidsPage ? 'transparent-background' : "raiz"}>
+    <div className={isKidsPage ? "transparent-background" : "raiz"}>
+      {isDesktop ? <Header /> : <HeaderCellphone />}
 
-      {isMobile ? (<Header />) : ( <Headercellphone />) }
-      
       <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/sobre' element={<About />}/>
-        <Route path='/servir' element={<Give />} />
-        <Route path='/kids' element={<GracaKids />}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<About />} />
+        <Route path="/servir" element={<Give />} />
+        <Route path="/kids" element={<GracaKids />} />
       </Routes>
-     <Footer/>
+
+      <Footer />
     </div>
   );
 }
-
 
 export default App;
